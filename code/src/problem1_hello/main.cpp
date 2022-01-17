@@ -14,9 +14,33 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
+#include <iostream>     // used for cin, cout, endl....
+#include <string>
+
+//using std::cout;
+
+using std::cout;
+
 int main()
 {
+
     // TODO: input your code here
 
+    std::string userName; // not user_name,... full-qualified id
+    //std::cin >> userName;     // reads a line bedfore a very first space char
+    //std::cin.getline()        // readl the whole line with spaces, but uses c-style strings (obsolete)
+    std::getline(std::cin, userName);   // reads a string entirely and properly
+
+
+    //std::cout << "Hello, " <<  userName << std::endl;
+    /*std::*/cout << "Hello, " <<  userName << '\n';    // the same as std::endl
+
     return 0;
+}
+
+
+
+void foo()
+{
+    cout << "asd";
 }

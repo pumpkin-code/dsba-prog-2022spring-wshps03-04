@@ -13,9 +13,15 @@
 ///
 ////////////////////////////////////////////////////////////////////////////////
 
+#include <iostream>
 
 int main()
 {
+    std::cout << "Input two integers 1 <= (m, n) <= 8: ";
+
+    unsigned int m, n;
+    std::cin >> m >> n;
+
     // TODO: input your code here
 
     return 0;
