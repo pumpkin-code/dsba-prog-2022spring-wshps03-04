@@ -14,9 +14,27 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
+#include <iostream>     // for std::cin, cout, endl
+#include <string>       // for std::string
+
 int main()
 {
-    // TODO: input your code here
+    using std::cout;
+
+    std::string userName;
+    //std::cin >> userName;
+    //std::cin.getline()        // works with legacy c_style strings
+    std::getline(std::cin, userName);
+
+    /*std::*/cout << "Hello, " << userName << std::endl; // '\n'
+    //std::cout << "Hello, " << userName << '\n'; //
 
     return 0;
 }
+
+void foo()
+{
+    std::cout << "asd";
+}
+
+

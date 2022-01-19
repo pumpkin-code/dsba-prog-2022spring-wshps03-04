@@ -14,9 +14,13 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
+#include <iostream>
+
 int main()
 {
     // TODO: input your code here
+    unsigned short m, n;
+    std::cin >> m >> n;
 
     return 0;
 }
